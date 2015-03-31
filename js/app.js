@@ -64,6 +64,7 @@ $scope.subreddits.push(data.data.children[i].data);
     
         
     }
+    
 $scope.change = function(){
 console.log($scope.sr);
 
@@ -130,6 +131,7 @@ $scope.changeView = function(view){
 $location.path(view);
     $scope.apply();
 }
+
 }]);
     
 redditApp.directive('ngHover', function() {
@@ -175,10 +177,3 @@ redditApp.directive('ngHover', function() {
     }
   }
 });
-
-
-    
-
-    
-    
-    
