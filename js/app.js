@@ -95,17 +95,6 @@ $scope.page = $scope.page - 1;
 }
 
 
-$scope.nextpage = function(){
-    
-    $scope.next = "&after=" + $scope.after;
-    //console.log($scope.next);
-    $scope.count = $scope.count + 25;
-  
-     $scope.redditify();
-    
-
- 
-}
 
 
 
@@ -116,16 +105,7 @@ $scope.animateBorder = function(event){
 }
 
 
-$scope.previouspage = function(){
 
-    $scope.next = "&before=" + $scope.before;
-    $scope.count = $scope.count - 25;
-   
-     $scope.redditify();
-
-
-
-}
 
 $scope.changeView = function(view){
 $location.path(view);
@@ -176,4 +156,56 @@ redditApp.directive('ngHover', function() {
    
     }
   }
+});
+
+//Next Page 
+redditApp.directive('nextPage', function(){
+
+    return {
+    
+        link: function(scope, element){
+        
+            element.on('click', function(){
+            scope.next = "&after=" + scope.after;
+            scope.count = scope.count + 25;
+                
+            scope.redditify();
+            
+            
+            });
+        
+        
+        
+        }    
+    
+    }
+
+
+
+});
+
+//Previous Page 
+redditApp.directive('previousPage', function(){
+
+    return {
+    
+        link: function(scope, element){
+        
+            element.on('click', function(){
+            scope.next = "&before=" + scope.before;
+            scope.count = scope.count - 25;
+
+            scope.redditify();
+            
+            
+            });
+        
+        
+        
+        }    
+    
+    }
+
+
+
 });
