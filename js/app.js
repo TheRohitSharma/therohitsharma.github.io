@@ -78,8 +78,8 @@ redditApp.directive('ngHover', function() {
      	element.on('click', function(){
 		
         $('.modal-body').empty();
-        $('.modal-title').empty();
         $('#myModal p a').remove();
+        $('.modal-title').empty();
         $('.modal-title').append('<a href="http://reddit.com' + scope.subreddit.permalink + '" target="_blank">' + scope.subreddit.title + '</a>');
         $('.modal-body').append('<img id="mimg" src="' + scope.subreddit.url + '">');
 
