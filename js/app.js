@@ -1,11 +1,7 @@
 //RedditApp Module
 var redditApp = angular.module('redditApp', ['ngRoute']);
 
-
-
-
-
-redditApp.controller('mainController', ['$scope', '$http', '$location', '$rootElement', '$timeout',  function($scope, $http, $location, $rootElement, $timeout){
+redditApp.controller('mainController', ['$scope', '$http', '$rootElement', '$timeout',  function($scope, $http, $rootElement, $timeout){
     
     $scope.next = null;
     $scope.count = 0;
