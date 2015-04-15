@@ -65,65 +65,29 @@ $scope.subreddits.push(data.data.children[i].data);
         
     }
     
-$scope.change = function(){
-console.log($scope.sr);
-
-
-}
 
 
 $scope.resetPage= function(){
     $scope.page = 1;
-
-
-
-
 }
 
 
+]
 
-$scope.pageIncrease = function(){
-
-$scope.page = $scope.page + 1;
-
-}
-
-$scope.pageDecrease = function(){
-if($scope.page != 1)
-$scope.page = $scope.page - 1;
-
-}
-
-
-
-
-
-$scope.animateBorder = function(event){
-    angular.element(event.srcElement).hide();
-    
-    
-}
-
-
-
-
-$scope.changeView = function(view){
-$location.path(view);
-    $scope.apply();
-}
 
 }]);
     
+    //Code for the info qtip
 redditApp.directive('ngHover', function() {
   return {
       
     link: function(scope, element) {
    element.qtip({
          position: {
-        my: 'bottom center', // Position it where the click was...
+        my: 'bottom center', 
         at: 'top center',
         target: element,
-        adjust: { mouse: false } // ...but don't follow the mouse
+        adjust: { mouse: false } 
     },
            style: { classes: 'qtip-youtube' },
 
@@ -138,12 +102,10 @@ redditApp.directive('ngHover', function() {
    })
    
    element.on('click', function(){
-        console.log(scope.subreddit.link);
-        $('.modal-body').empty();
-        $('#myModal p a').remove();
-        $('.modal-title').empty();
-        $('.modal-title').append('<a href="http://reddit.com' + scope.subreddit.permalink + '" target="_blank">' + scope.subreddit.title + '</a>');
+   	$('#myModal p a').remove();
+        $('.modal-body', '.modal-title').empty();
         
+        $('.modal-title').append('<a href="http://reddit.com' + scope.subreddit.permalink + '" target="_blank">' + scope.subreddit.title + '</a>');
         $('.modal-body').append('<img id="mimg" src="' + scope.subreddit.url + '">');
 
         $('#myModal').modal('show');           
