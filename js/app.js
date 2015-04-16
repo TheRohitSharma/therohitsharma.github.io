@@ -1,12 +1,13 @@
-    //RedditApp Module
+//RedditApp Module
 var redditApp = angular.module('redditApp', ['ngRoute']);
 
-redditApp.controller('mainController', ['$scope', '$http', '$rootElement', '$timeout', function($scope, $http, $rootElement, $timeout) {
+redditApp.controller('mainController', ['$scope', '$http', '$timeout', function($scope, $http, $timeout) {
 
     $scope.next = null;
     $scope.count = 0;
     $scope.page = 1;
 
+    //The Reddit AJAX magic.ro
     $scope.redditify = function() {
         $scope.sr;
         $scope.success = false;
