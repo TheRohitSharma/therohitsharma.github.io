@@ -7,7 +7,7 @@ redditApp.controller('mainController', ['$scope', '$http', '$timeout', function(
     $scope.count = 0;
     $scope.page = 1;
 
-    //The Reddit AJAX magic.ro
+    //The Reddit AJAX magic.
     $scope.redditify = function() {
         $scope.sr;
         $scope.success = false;
