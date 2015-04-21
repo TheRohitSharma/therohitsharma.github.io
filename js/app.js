@@ -19,13 +19,15 @@ redditApp.controller('mainController', ['$scope', '$http', '$timeout', function(
             $scope.subreddits = [];
             $scope.next = null;
 
+            if (data.data.children.length > 0) {
+                $('.previouspage, .nextpage').removeClass('hidden');
+                $('#placeholderdiv').addClass('hidden');
+                }
+
             for (var i = 0; i < data.data.children.length; i++) {
                 //Hide placeholder div
                 //Show page nav.
-                if (data.data.children.length > 0) {
-                    $('.previouspage, .nextpage').removeClass('hidden');
-                    $('#placeholderdiv').addClass('hidden');
-                }
+               
 
                 //Dealing with .gifs
                 var str = data.data.children[i].data.url;
