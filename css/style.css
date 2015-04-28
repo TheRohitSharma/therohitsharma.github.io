@@ -2,20 +2,14 @@ html{
 margin:0px;
 padding:0px;
 width:100%;
-<<<<<<< HEAD
 height:960px;
-=======
 height:100%;
->>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
+
 }
 
 body{
 margin:0px;
 padding:0px;
-<<<<<<< HEAD
-=======
-
->>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 width:100%;
 height:auto;
 }
@@ -26,28 +20,23 @@ color:gray;
 font-family: 'Caudex', sans-serif;
 font-size: 1.2em;
 max-width: 100%;
-<<<<<<< HEAD
 position: absolute;
 
-=======
->>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
+
 }
 
 #subreddittext{
 width:200px;
 height:40px;
-<<<<<<< HEAD
 margin: 20px 200px;
-=======
 margin: -50px 200px;
->>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 margin-right: 15px;
 margin-bottom: 0px;
 padding: 5px;
 float:left;
 }
 
-<<<<<<< HEAD
+
 .subredditcontainer{
 height:100px;
 width:200px;
