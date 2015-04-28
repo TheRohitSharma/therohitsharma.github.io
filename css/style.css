@@ -2,12 +2,20 @@ html{
 margin:0px;
 padding:0px;
 width:100%;
+<<<<<<< HEAD
 height:960px;
+=======
+height:100%;
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 }
 
 body{
 margin:0px;
 padding:0px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 width:100%;
 height:auto;
 }
@@ -18,20 +26,28 @@ color:gray;
 font-family: 'Caudex', sans-serif;
 font-size: 1.2em;
 max-width: 100%;
+<<<<<<< HEAD
 position: absolute;
 
+=======
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 }
 
 #subreddittext{
 width:200px;
 height:40px;
+<<<<<<< HEAD
 margin: 20px 200px;
+=======
+margin: -50px 200px;
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 margin-right: 15px;
 margin-bottom: 0px;
 padding: 5px;
 float:left;
 }
 
+<<<<<<< HEAD
 .subredditcontainer{
 height:100px;
 width:200px;
@@ -75,6 +91,9 @@ padding:4px;
 #closeitem:hover{
 color:whitesmoke;
 }
+=======
+
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 
 #inputwrapper{
 width:100%;
@@ -84,6 +103,7 @@ position: relative;
 
 }
 
+<<<<<<< HEAD
 #inputwrapper button{
 float:left;
 margin:20px auto;
@@ -101,6 +121,8 @@ background: whitesmoke;
 
 }
 
+=======
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 .page{
 position:relative;
 display:block;
@@ -118,13 +140,24 @@ margin:0px auto;
 
 }
 
+<<<<<<< HEAD
 
+=======
+.hidden{
+display:none;
+
+}
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 
 .nextpage{
 
 right:0;
 margin:0px auto;
+<<<<<<< HEAD
 right:235px;
+=======
+right:200px;
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 padding:5px;
 cursor: pointer;
 display:block;
@@ -132,15 +165,24 @@ z-index:200;
 background-image: url(/img/circle-right.svg);
 background-size: cover;
 position: absolute;
+<<<<<<< HEAD
 width:30px;
 height:30px;
+=======
+width:40px;
+height:40px;
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 }
 
 .previouspage{
 float:left;
 left:0;
 margin:0px auto;
+<<<<<<< HEAD
 margin-left:235px;
+=======
+margin-left:200px;
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 padding:5px;
 cursor: pointer;
 display:block;
@@ -148,8 +190,13 @@ z-index:200;
 background-image: url(/img/circle-left.svg);
 background-size: cover;
 position: absolute;
+<<<<<<< HEAD
 width:30px;
 height:30px;
+=======
+width:40px;
+height:40px;
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 }
 
 .nextpage:hover, .previouspage:hover{
@@ -179,6 +226,7 @@ left:0;
 top:20%;
 }
 
+<<<<<<< HEAD
 #placeholderdiv h4{
 position:absolute;
 margin:0px auto;
@@ -190,6 +238,8 @@ top:30%;
 font-size: 0.8em;
 }
 
+=======
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 #rtitle{
 position:absolute;
 left:0;
@@ -206,6 +256,7 @@ content: "r/";
 
 }
 
+<<<<<<< HEAD
 .maincontain{
 width:100%;
 height:100%;
@@ -215,19 +266,32 @@ position:relative;
 #listcontain{
 width:60%;
 height:400px;
+=======
+
+#listcontain{
+width:100%;
+height:auto;
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 background:whitesmoke;
 position: relative;
 margin:0px auto;
 text-align: center;
 max-width: 100%;
+<<<<<<< HEAD
     
 }
 
 .imagelist{
+=======
+}
+
+ul{
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 height:auto;
 margin:0px auto;
 background: ghostwhite;
 position: absolute;
+<<<<<<< HEAD
 padding:0px;
 list-style: none;
 max-width: 100%;
@@ -245,6 +309,27 @@ position: relative;
 margin:30px;
 display: inline-block;
 
+=======
+padding-right:0px;
+
+list-style: none;
+    max-width: 100%;
+
+
+}
+
+li{
+cursor: pointer;
+background: none;
+width:400px;
+height:400px;
+border-radius:4px;
+padding:20px;
+position: relative;
+margin:12px;
+display: inline-block;
+float:left;
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 box-shadow: 0.7px 0.3px skyblue;
 transition-property: border;
 transition-duration: 0.3s;
@@ -252,7 +337,11 @@ transition-timing-function: ease;
 }
 
 
+<<<<<<< HEAD
 .imagelist li:hover{
+=======
+li:hover{
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
 background:whitesmoke;
 border-bottom:solid 1px orange;
 border-top:solid 1.5px orange;
@@ -381,6 +470,7 @@ margin:0 auto;
 max-width:100%;
 max-height:100%;
  }
+<<<<<<< HEAD
 
 /* Images */
 .iconcontainer{
@@ -490,3 +580,5 @@ position: relative;
 display:none;
 
 }
+=======
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808

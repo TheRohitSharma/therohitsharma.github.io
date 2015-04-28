@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css">
+<<<<<<< HEAD
         
         <!-- JS -->
         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -31,12 +32,22 @@
         <script src="app/directives/UserControls/saveDirective.js"></script>
         <script src="app/directives/UserControls/trashDirective.js"></script>
         <!--<script src="app/directives/autocompleteDirective.js"></script>-->
+=======
+        <!-- JS -->
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js">         </script>
+        <script src="//code.angularjs.org/1.3.9/angular.min.js"></script>
+        <script src="//code.angularjs.org/1.3.9/angular-route.min.js"></script>
+        <script src="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>
+        <script src="js/app.js"></script>
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
     </head>
         
         <header class="title"><h1>Rubidium</h1></header>
 
 <body ng-controller="mainController">
 
+<<<<<<< HEAD
         <!-- Text input and getting images. -->
         <div id ="inputwrapper">
             <input auto-complete ui-items="names" id = "subreddittext" type="text" ng-model = "sr" ng-change="populateImages(); resetPage()" placeholder="Enter a subreddit.">
@@ -78,6 +89,26 @@
     <div id ="listcontain">
 
         <ul ng-droppable class="imagelist">
+=======
+        <div id ="inputwrapper">
+            <input id = "subreddittext" type="text" ng-model = "sr" ng-change="redditify(); resetPage()" placeholder="Enter a subreddit."> <!--<p class="page">Page: {{page}}</p>-->
+        </div>
+    
+
+    <div id ="pagenav">
+        <div previous-page class="previouspage hidden" ng-dblclick="return false"></div>
+            <h3 id="rtitle">{{subreddit}}</h3>
+        <div next-page class="nextpage hidden"></div>
+    </div>
+    
+    <div id = "placeholderdiv">
+        <h2>You haven't picked a subreddit.</h2>
+    
+    </div> 
+    
+    <div id ="listcontain">
+        <ul class="imagelist">
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
     
             <li  ng-hover ng-repeat="subreddit in subreddits" ><img id="image" src='{{ subreddit.url }}'>
             </li>     
@@ -85,8 +116,11 @@
         </ul>
     </div>
 
+<<<<<<< HEAD
     
     <!-- The typical enlarged image modal. -->
+=======
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -105,4 +139,7 @@
 </body>
     
 </html>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0688b5672a72e7ab8a8af907500c00b4ffc62808
