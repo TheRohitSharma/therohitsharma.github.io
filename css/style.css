@@ -226,6 +226,7 @@ max-width: 100%;
 .imagelist{
 height:auto;
 margin:0px auto;
+width:60%;
 background: ghostwhite;
 position: absolute;
 padding:0px;
