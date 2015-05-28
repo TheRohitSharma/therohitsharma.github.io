@@ -38,6 +38,7 @@ redditApp.controller('mainController', ['$scope', '$http', '$timeout', '$localSt
             if (data.data.children.length > 0) {
                 $('.previouspage, .nextpage').removeClass('hidden');
                 $('#placeholderdiv').addClass('hidden');
+                $('.listcontain').removeClass('hidden');
                 }
         
 
