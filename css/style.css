@@ -233,6 +233,8 @@ padding:0px;
 list-style: none;
 max-width: 100%;
 padding-left:13px;
+left:0;
+right:0;
 }
 
 .imagelist li{
