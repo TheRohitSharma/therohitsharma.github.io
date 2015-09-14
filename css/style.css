@@ -34,7 +34,7 @@ float:left;
 
 .subredditcontainer{
 height:100px;
-width:60%;
+width:200px;
 max-width: 100%;
 position: absolute;
 top:30%;
@@ -159,7 +159,7 @@ display:block;
 }
 
 #placeholderdiv{
-width:960px;
+width:60%;
 height:400px;
 background:ghostwhite;
 z-index: 100;
