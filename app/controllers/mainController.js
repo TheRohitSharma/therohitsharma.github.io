@@ -20,7 +20,7 @@ redditApp.controller('mainController', ['$scope', '$http', '$timeout', '$localSt
         //Get images from Reddit API.    
         $scope.sr;
         $scope.success = false;
-        $http.get('https://www.reddit.com/r/' + $scope.sr + '.json?count=' + $scope.count + '&limit=25' + $scope.next)
+        $http.get('https://www.reddit.com/r/' + $scope.sr + '.json?count=' + $scope.count + '&limit=25')
             
         .success(function(data) {
                 
