@@ -34,7 +34,7 @@ float:left;
 
 .subredditcontainer{
 height:100px;
-width:60%;
+width:200px;
 max-width: 100%;
 position: absolute;
 top:30%;
@@ -240,12 +240,12 @@ right:0;
 .imagelist li{
 cursor: pointer;
 background: none;
-width:200px;
+width:33.3%;
 height:200px;
 border-radius:4px;
 float:left;
 position: relative;
-margin:30px;
+margin:5px;
 display: inline-block;
 
 box-shadow: 0.7px 0.3px skyblue;
