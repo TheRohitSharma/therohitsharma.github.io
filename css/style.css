@@ -255,8 +255,8 @@ transition-timing-function: ease;
 
 .imagelist li:hover{
 background:whitesmoke;
-border-bottom:solid 1px orange;
-border-top:solid 1.5px orange;
+border-bottom:solid 1px darkgray;
+border-top:solid 1.5px darkgray;
 }
 
 
