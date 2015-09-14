@@ -254,7 +254,7 @@ transition-timing-function: ease;
 
 
 .imagelist li:hover{
-background:whitesmoke;
+background-color:dimgray;
 border-bottom:solid 1px darkgray;
 border-top:solid 1.5px darkgray;
 }
